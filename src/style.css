@@ -32,9 +32,12 @@ body {
     visibility: hidden;
 }
 
+
+/* Responsive */
+
 @media only screen and (min-width: 300px) and (max-width: 700px) {
     body {
-        background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3f64162d-4e41-40d2-be0f-5be0535ec904/d5wl1j0-b0a1b5d6-6448-4147-85a6-32241e6aa6dd.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNmNjQxNjJkLTRlNDEtNDBkMi1iZTBmLTViZTA1MzVlYzkwNFwvZDV3bDFqMC1iMGExYjVkNi02NDQ4LTQxNDctODVhNi0zMjI0MWU2YWE2ZGQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.WA47TJu4o-kmyaYO8J0-f-YAMjxJJt7ASvdvJ50zJkA');
+        background-image: url('https://cdn.molaunhuevo.com/wp-content/uploads/fondos-pantalla-pokemon.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -64,21 +67,19 @@ body {
     }
     #instructions {
         animation: bounce 2s infinite 2s;
-        margin: 100px auto;
+        margin: auto;
         padding-bottom: 50px;
         background-color: rgba(255, 255, 255, 0.95);
         border: 2px solid;
-        padding: 10px;
         border-radius: 50px 20px;
         color: black;
-        width: 200px;
+        width: 10px;
         font-family: 'Slabo 27px', serif;
         text-align: justify;
         position: absolute;
         top: 10%;
         right: 0;
         left: 0;
-        margin: 0 auto;
     }
     #instructions p {
         color: black;
@@ -109,6 +110,9 @@ body {
 .header-right {
     float: right;
 }
+
+
+/* Responsive header */
 
 @media screen and (max-width: 500px) {
     .header a {
@@ -194,7 +198,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 4rem;
+    margin-top: 2rem;
     cursor: pointer;
 }
 
@@ -276,6 +280,25 @@ body {
     text-align: center;
 }
 
+.container .card p1 {
+    padding: 0 1rem;
+    font-family: 'Slabo 27px', serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+}
+
+.container .card p2 {
+    font-family: 'Slabo 27px', serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
 .container .card a {
     font-weight: 500;
     text-decoration: none;
@@ -283,122 +306,7 @@ body {
 }
 
 
-/* menu */
-
-#colorNav>ul {
-    width: 450px;
-    margin: 0 auto;
-}
-
-#colorNav>ul>li {
-    /* will style only the top level li */
-    list-style: none;
-    box-shadow: 0 0 10px rgba(100, 100, 100, 0.2) inset, 1px 1px 1px #CCC;
-    display: inline-block;
-    line-height: 1;
-    margin: 1px;
-    border-radius: 3px;
-    position: relative;
-}
-
-#colorNav>ul>li>a {
-    color: inherit;
-    text-decoration: none !important;
-    font-size: 24px;
-    padding: 25px;
-}
-
-#colorNav li ul {
-    position: absolute;
-    list-style: none;
-    text-align: center;
-    width: 180px;
-    left: 50%;
-    margin-left: -90px;
-    top: 70px;
-    font: bold 12px 'Open Sans Condensed', sans-serif;
-    /* This is important for the show/hide CSS animation */
-    max-height: 0px;
-    overflow: hidden;
-    -webkit-transition: max-height 0.4s linear;
-    -moz-transition: max-height 0.4s linear;
-    transition: max-height 0.4s linear;
-}
-
-#colorNav li:hover ul {
-    max-height: 200px;
-}
-
-#colorNav li ul li {
-    background-color: #313131;
-}
-
-#colorNav li ul li a {
-    padding: 12px;
-    color: #fff !important;
-    text-decoration: none !important;
-    display: block;
-}
-
-#colorNav li ul li:nth-child(odd) {
-    /* zebra stripes */
-    background-color: #363636;
-}
-
-#colorNav li ul li:hover {
-    background-color: #444;
-}
-
-#colorNav li ul li:first-child {
-    border-radius: 3px 3px 0 0;
-    margin-top: 25px;
-    position: relative;
-}
-
-#colorNav li ul li:first-child:before {
-    /* the pointer tip */
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    border: 5px solid transparent;
-    border-bottom-color: #313131;
-    left: 50%;
-    top: -10px;
-    margin-left: -5px;
-}
-
-#colorNav li ul li:last-child {
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-}
-
-#colorNav li.green {
-    /* This is the color of the menu item */
-    background-color: #00c08b;
-    /* This is the color of the icon */
-    color: #127a5d;
-}
-
-#colorNav li.red {
-    background-color: #ea5080;
-    color: #aa2a52;
-}
-
-#colorNav li.blue {
-    background-color: #53bfe2;
-    color: #2884a2;
-}
-
-#colorNav li.yellow {
-    background-color: #f8c54d;
-    color: #ab8426;
-}
-
-#colorNav li.purple {
-    background-color: #df6dc2;
-    color: #9f3c85;
-}
+/* menu filter pokemon types */
 
 
 /* navegacion */
@@ -445,4 +353,103 @@ ul.topnav li.right {
     ul.topnav li {
         float: none;
     }
+}
+
+
+/* Menu tipos */
+
+
+/* pokedex titulo */
+
+h3 {
+    width: 100%;
+    Font-Family: 'Ruda';
+    Font-Size: 30px;
+    color: #f8f8f8;
+    text-align: center;
+    background-color: #71a0a5;
+    font: 'Josefin Sans', sans-serif;
+}
+
+
+/*menu tipos*/
+
+#tipos-Pokemon {
+    background-color: #00B3CC;
+    align-items: center;
+}
+
+h4 {
+    width: 100%;
+    height: 50%;
+    Font-Family: 'Ruda';
+    Font-Size: 30px;
+    color: #f8f8f8;
+    text-align: center;
+    background-color: #5ca0d3;
+    font: 'Josefin Sans', sans-serif;
+}
+
+.buttonType {
+    padding: 0 16px;
+    border-radius: 2px;
+    background-color: #4592af;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    color: #fff;
+    transition: background-color 15ms linear, box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    height: 36px;
+    line-height: 2.25rem;
+    font-family: 'Slabo 27px', serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.buttonType:hover,
+.buttonType:focus {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: #159090;
+}
+
+.buttonType:active {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+    background-color: #61b4b3;
+}
+
+
+/* Botones orden asc y desc */
+
+#sorta-z {
+    background-color: #00B3CC;
+    align-items: center;
+}
+
+.btn-option {
+    padding: 0 16px;
+    border-radius: 2px;
+    background-color: #4592af;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    color: #fff;
+    transition: background-color 15ms linear, box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    height: 36px;
+    line-height: 2.25rem;
+    font-family: 'Slabo 27px', serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.btn-option:hover,
+.btn-option:focus {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: #159090;
+}
+
+.btn-option:active {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+    background-color: #61b4b3;
 }
