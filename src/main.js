@@ -30,8 +30,10 @@ const goBack = document.getElementById('return-button');
 
 const goback = () => {
     hideSection('dataPokemon');
-    hideSection('tipos-Pokemon');
+    hideSection('Pokedex');
+
     hideSection('sorta-z');
+    hideSection('filtermenu');
     showSection('PaginaInicio');
 }
 
@@ -44,9 +46,8 @@ const AllPokemon = document.getElementById('show-button');
 
 const openPokedex = () => {
     hideSection('PaginaInicio');
-    hideSection('type-pokemon');
-    showSection('tipos-Pokemon');
-    showSection('sorta-z');
+
+    showSection('filtermenu');
     showSection('dataPokemon');
     showSection('Pokedex');
 }
