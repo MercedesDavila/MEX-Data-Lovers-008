@@ -559,11 +559,11 @@
     });
 
     describe('computeStats', () => {
-        it('debería ser una función', () => {
+        it('Debería ser una función', () => {
             expect(typeof window.computeStats.statsPromedy).toBe('function');
         });
 
-        it('debería retornar el promedio de "weight" de los Pokemones', () => {
+        it('Debería retornar el promedio de "weight" de los Pokémones', () => {
             expect(window.computeStats.statsPromedy(arrdataTest, sumWeight)).toEqual(resultSumWeight);
         });
 
