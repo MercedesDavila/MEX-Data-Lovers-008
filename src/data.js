@@ -7,10 +7,35 @@
 //};
 
 //window.example = example;
+//Filter by type
+// const filterData = (dataPokemon, typesPok) => {
+
+// };
+
+
+// window.filterData = filterData;
+//Filter by type
+
+const filterBy = (data, condition) => { /* Función para filtrar los pokemones por tipos */
+    const filterbytype = data.filter(element => {
+        for (let i = 0; i < element.type.length; i++) {
+            if (element.type[i] === condition) {
+                return 1;
+            }
+        }
+    });
+    return filterbytype;
+};
+
+window.filterBy = filterBy;
+
+
+
 
 
 // Filter A-Z Y  Z-A
 // Función para ordenar los pokemones por nombre 
+
 
 const sorData = (dataPokemon, sortBy, sortOrder) => {
     let pokemonOrder = [];
