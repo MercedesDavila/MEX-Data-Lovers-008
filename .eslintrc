@@ -10,7 +10,11 @@
     "sorData": true,
     "filterBy": true,
     "Pokemon": false,
-    "example": false
+    "example": false,
+    "sumWeight": true,
+    "computeStats": true,
+    "aveWeight": true
+
   },
   "rules": {
     "no-console": 0,

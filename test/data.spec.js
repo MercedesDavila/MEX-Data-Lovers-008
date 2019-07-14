@@ -517,6 +517,8 @@
         }]
     }];
 
+    const sumWeight = "weight";
+    const resultSumWeight = "32.10";
 
 
     describe('sorData', () => {
@@ -554,4 +556,16 @@
         // test('debería retornar testFilterbyGrass para filterBy(arrdataTest, "Grass")', () => {
         //     expect(filterBy(arrdataTest, 'Grass')).toEqual(testFilterbyGrass);
         // });
+    });
+
+    describe('computeStats', () => {
+        it('debería ser una función', () => {
+            expect(typeof window.computeStats.statsPromedy).toBe('function');
+        });
+
+        it('debería retornar el promedio de "weight" de los Pokemones', () => {
+            expect(window.computeStats.statsPromedy(arrdataTest, sumWeight)).toEqual(resultSumWeight);
+        });
+
+
     });

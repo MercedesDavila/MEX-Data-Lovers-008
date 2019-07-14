@@ -3,5 +3,8 @@
     "node": true,
     "jest": true,
     "mocha": true
+  },
+  "globals": {
+    "assert": false
   }
 }

@@ -7,13 +7,7 @@
 //};
 
 //window.example = example;
-//Filter by type
-// const filterData = (dataPokemon, typesPok) => {
 
-// };
-
-
-// window.filterData = filterData;
 //Filter by type
 
 const filterBy = (data, condition) => { /* Función para filtrar los pokemones por tipos */
@@ -57,3 +51,21 @@ const sorData = (dataPokemon, sortBy, sortOrder) => {
 };
 
 window.sorData = sorData;
+
+
+// Stats by weight
+
+window.computeStats = {
+    statsPromedy: (data, stats) => {
+        let finalResult;
+        let sumWeight = 0;
+        data.forEach((data) => {
+            const number = data[stats];
+            const onlyNumber = number.split(" ");
+            sumWeight += parseFloat(onlyNumber);
+        });
+
+        finalResult = sumWeight / data.length;
+        return finalResult.toFixed(2);
+    },
+};
